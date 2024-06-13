@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const adivinarBtn = document.getElementById('adivinarBtn');
     const numeroInput = document.getElementById('numeroInput');
     const contadorIntentos = document.getElementById('contador');
-    const reiniciarBtn = document.getElementById('reiniciarBtn');
+    const reiniciarBtn = document.getElementById('reiniciarBtn')
 
     // Agregar evento click al botón
     adivinarBtn.addEventListener('click', function() {
@@ -40,13 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
         intentos++;
         contadorIntentos.textContent = maxIntentos - intentos;
 
-        // vaciar el input después de cada intento
+        // Limpiar el input después de cada intento
         numeroInput.value = '';
     });
 
     reiniciarBtn.addEventListener('click', function(){
         location.reload(); // Recargar la página para reiniciar el juego
-    })git 
+    })
 });
 
 
