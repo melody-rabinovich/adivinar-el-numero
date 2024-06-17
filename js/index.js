@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Agregar evento click al botón
     adivinarBtn.addEventListener('click', function() {
 
-        if (intentos > maxIntentos) {
+        if (intentos >= maxIntentos) {
             alert(`¡Has superado el número máximo de intentos! El número era ${numeroAleatorio}`);
             return;
         }
